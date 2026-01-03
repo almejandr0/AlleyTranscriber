@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "483613424128",
+    "project_id": "alleytranscriber",
+    "storage_bucket": "alleytranscriber.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483613424128:android:43c1c120a9709a175876e5",
+        "android_client_info": {
+          "package_name": "com.alleyverse.transcriber.transcriber_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483613424128-5mo10tnk4io171au2a3r0hl0cqjqan8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alleyverse.transcriber.transcriber_app",
+            "certificate_hash": "1aa772b2acc57ce96dd631904ef9c85c13676190"
+          }
+        },
+        {
+          "client_id": "483613424128-62fgh313akuh5cj1qmgqapitfad3tbh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_ZjlLMneYGnC3yTEZJ5rulGG-c5lmfqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483613424128-62fgh313akuh5cj1qmgqapitfad3tbh1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "483613424128-uqfgj750pl2ueeudvs5tjevhdk4kocd9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alleyverse.transcriber.transcriberApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

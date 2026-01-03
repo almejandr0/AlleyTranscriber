@@ -5,20 +5,27 @@ import 'firebase_options.dart';
 import 'presentation/providers/auth_provider.dart';
 
 void main() async {
+  // 1. Aseguramos que el motor de Flutter esté listo
   WidgetsFlutterBinding.ensureInitialized();
   
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  
+  // 2. Intentamos inicializar Firebase con seguridad
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  } catch (e) {
+    // Si sale el error de "duplicate-app", lo ignoramos y seguimos.
+    // Esto evita la pantalla negra en los Hot Restarts.
+    print("Firebase ya estaba inicializado: $e");
+  }
+
+  // 3. Arrancamos la App
   runApp(
-    // 1. ProviderScope: necesario para riverpod (notion explicacion)
     const ProviderScope(
       child: MyApp(),
     ),
   );
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
